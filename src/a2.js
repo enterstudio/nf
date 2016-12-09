@@ -1,1 +1,3 @@
-module.exports = 1
+module.exports = {
+  template: `<div>asasas</div>`
+}
