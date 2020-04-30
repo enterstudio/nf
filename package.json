@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Eric Mendes Dantas",
   "license": "MIT",
@@ -13,6 +15,8 @@
     "electron": "^1.4.11",
     "lodash": "^4.17.2",
     "moment": "^2.17.1",
-    "vue": "^2.1.4"
-  }
+    "vue": "^2.1.4",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
